@@ -10,7 +10,7 @@ html, body{
     font-family: 'Times New Roman', Times, serif;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(0, 0, 0);
     margin: 5px;
@@ -240,6 +240,22 @@ header .menu-toggle{
     height: 50%;
     margin-top: -60em;
 }
+/*site 2*/
+.content-site2{
+    text-align: justify;
+    margin-left: 6em;
+    margin-right: 34em;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+.imagem-site2{
+    margin-left: 58em;
+    position: absolute;
+    width: 32%;
+    height: 40%;
+    margin-top: -46em;
+}
+
 
 /*footer*/
 .footer{
@@ -324,3 +340,4 @@ header .menu-toggle{
     margin: 20px;
 
 }
+
