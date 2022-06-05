@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: azure;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+}
+
+p{
+    color: black;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    background: rgb(46, 107, 64);
+    color: azure;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.btn:hover{
+    color: white !important;
+    background: rgb(17, 44, 25);
+}
+
+body .carrossel {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+/* menu*/
+header{
+    background-color: rgb(108, 165, 127);
+    height: 66px;
+}
+
+header * {
+    color: white;
+}
+
+header .logo{
+    float: left;
+    height: inherit;
+    margin-left: 8em;
+}
+
+header .logo-text{
+    margin: 9px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header .logo-text span{
+    color: rgb(192, 214, 182);
+}
+
+header ul{
+    float: right;
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+}
+
+header ul li{
+    float: left;
+    position: relative;
+}
+
+header ul li ul{
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    display: none;
+    width: 180px;
+    z-index: 88888;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header ul li ul li{
+    width: 100%;
+}
+
+header ul li ul li a{
+    padding: 10px;
+    color: #444;
+    background: white;
+}
+
+header ul li ul li a.logout{
+    color: red;
+}
+
+header ul li ul li a:hover{
+    background: rgba(184, 184, 184, 0.596);
+}
+
+header ul li a{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    background: rgb(64, 124, 85);
+    transition: 0.5s;
+}
+
+header .menu-toggle{
+    display: none;
+}
+
+/* post slider*/
+.post-slider{
+    position: relative;
+}
+.post-slider .slider-title{
+    text-align: center;
+    margin: 30px auto;
+}
+
+.post-slider .post-wrapper{
+    width: 84%;
+    height: 350px;
+    margin: 0px auto;
+    padding: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+
+.post-slider .next{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    color: #444;
+    cursor: pointer;
+}
+
+.post-slider .prev{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    color: #444;
+    cursor: pointer;
+}
+
+.post-slider .post-wrapper .post{
+    background:white ;
+    display: inline-block;
+    width: 300px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    height: 330px;
+    box-shadow: 0.5rem 0.5rem 0.5rem -0.5rem #8b8a8a;
+}
+
+.post-slider .post-wrapper .post .slider-image{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.post-slider .post-wrapper .post .post-info{
+    height: 130px;
+    padding: 0px 5px;
+}
+.page-wrapper p{
+    margin-left: 8em;
+}
+
+/*sobre nos*/
+
+.content-sobrenos{
+    width: 90%;
+    margin: 80px auto 80px;
+}
+
+.content-sobrenos .main-sobrenos{
+    width: 55%;
+    float: left;
+    margin-left: 4em;
+}
+
+.content-sobrenos .main-sobrenos .sobre-nos-title{
+    margin: 20px;
+    margin-left: 0em;
+    color: black;
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content-sobrenos .image-sobrenos .nos .nos-image{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 35%;
+    height: 150%;
+    margin: 80px auto 80px;
+    margin-left: 3em;
+}
+
+/*site 1*/
+.content-site1{
+    text-align: justify;
+    margin-left: 6em;
+    margin-right: 30em;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+.imagem-site1{
+    margin-right:70em;
+    margin-left: 60em;
+}
+
+/*footer*/
+.footer{
+    background: rgb(108, 165, 127) ;
+    color: rgb(255, 255, 255);
+    height: 25px;
+    position: relative;
+}
+.footer .footer-bottom{
+    background: rgb(108, 165, 127);
+    color: white;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+}
+.footer .footer-bottom a:hover{
+    color: white !important;
+    background: rgb(64, 94, 73);
+}
+
+/*conten*/
+.content{
+    width: 90%;
+    margin: 30px auto 30px;
+}
+
+.content .main-content{
+    width: 70%;
+    float: left;
+}
+
+.content .sidebar{
+    width: 30%;
+    float: left;
+    height: 300px;
+}
+
+.content .main-content .post{
+    width: 95%;
+    height: 270px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: rgb(233, 245, 234);
+    position: relative;
+}
+
+.content .main-content .post .saiba-mais{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid rgb(29, 66, 35);
+    background: transparent;
+    border-radius: 0px;
+    color: rgb(16, 77, 8) !important;
+}
+
+.content .main-content .post .saiba-mais:hover{
+    color: white !important;
+    background: rgb(17, 44, 25);
+    transition: 0.25s;
+}
+
+.content .main-content .post .post-preview{
+    width: 60%;
+    float: right;
+    padding: 10px;
+}
+
+.content .main-content .post .post-image{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.content .main-content .recent-posts-title{
+    margin: 20px;
+
+}
