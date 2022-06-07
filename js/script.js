@@ -2,6 +2,7 @@ $(document).ready(function() {
     $('.menu-toggle').on('click', function (){
         $('.nav').toggleClass('showing');
         $('.nav ul').toggleClass('showing');
+
     });
 
     $('.post-wrapper').slick({
@@ -11,6 +12,7 @@ $(document).ready(function() {
         autoplaySpeed: 2000,
         nextArrow: $('.next'),
         prevArrow: $('.prev')
-      });
+    });
       
 });
+

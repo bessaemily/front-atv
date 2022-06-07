@@ -6,18 +6,17 @@ html, body{
     height: 100%;
     padding: 0px;
     margin: 0px;
-    background-color: white;
     font-family: 'Times New Roman', Times, serif;
 }
 
 h1, h2, h3, h4{
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(0, 0, 0);
+    color: #212121;
     margin: 5px;
 }
 
 p{
-    color: black;
+    color: #212121;
     font-size: 1.2em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -36,14 +35,14 @@ a{
 .btn{
     padding: 0.5rem 1rem;
     background: black;
-    color: rgb(73, 70, 62);
-    border: 1px solid transparent;
+    color: white;
+    border: 1px solid ;
     border-radius: 0.25rem;
 }
 
 .btn:hover{
-    color: rgb(25, 196, 82) !important;
-    background: rgb(18, 42, 177);
+    color: black !important;
+    background: white;
 }
 
 body .carrossel {
@@ -54,12 +53,12 @@ body .carrossel {
 
 /* menu*/
 header{
-    background-color: #3c5148;
+    background-color: #b31f1f;
     height: 66px;
 }
 
 header * {
-    color: white;
+    color: #0e0301;
 }
 
 header .logo{
@@ -74,7 +73,7 @@ header .logo-text{
 }
 
 header .logo-text span{
-    color: #6b8e4e;
+    color: #fafafa;
 }
 
 header ul{
@@ -125,7 +124,7 @@ header ul li a{
 }
 
 header ul li a:hover{
-    background: #6b8e4e;
+    background: #8b070b;
     transition: 0.5s;
 }
 
@@ -155,7 +154,7 @@ header .menu-toggle{
     top: 50%;
     right: 30px;
     font-size: 2em;
-    color: black;
+    color: #0e0301;
     cursor: pointer;
 }
 
@@ -164,7 +163,7 @@ header .menu-toggle{
     top: 50%;
     left: 30px;
     font-size: 2em;
-    color: black;
+    color: #0e0301;
     cursor: pointer;
 }
 
@@ -174,8 +173,10 @@ header .menu-toggle{
     width: 300px;
     margin: 0px 10px;
     border-radius: 5px;
-    height: 330px;
+    height: 280px;
     box-shadow: 0.5rem 0.5rem 0.5rem -0.5rem black;
+    border-left: 1px solid black;
+    background-color: whitesmoke;
 }
 
 .post-slider .post-wrapper .post .slider-image{
@@ -209,7 +210,7 @@ header .menu-toggle{
 .content-sobrenos .main-sobrenos .sobre-nos-title{
     margin: 20px;
     margin-left: 0em;
-    color: black;
+    color: #0e0301;
     font-size: 2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -221,9 +222,33 @@ header .menu-toggle{
     border-bottom-right-radius: 5px;
     width: 35%;
     height: 150%;
-    margin: 80px auto 80px;
+    margin: 10px auto 10px;
     margin-left: 3em;
+    float: right;
 }
+.content-sobrenos2{
+    width: 90%;
+    margin: 80px auto 80px;
+}
+ 
+.content-sobrenos2 .main-sobrenos2{
+    width: 55%;
+    float: left;
+    margin-left: 36em;
+}
+.content-sobrenos2 .image-sobrenos2 .nos2 .nos-image2{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 35%;
+    height: 300%;
+    margin: -200px auto -200px;
+    margin-right: 48em;
+    float: right;
+   
+}
+
 
 /*site 1*/
 .content-site1{
@@ -275,8 +300,8 @@ header .menu-toggle{
     left: 0px;
 }
 .footer .footer-bottom a:hover{
-    color: white !important;
-    background:#444;
+    color: #aa1419 !important;
+    background:transparent;
 }
 
 /*conten*/
@@ -294,17 +319,24 @@ header .menu-toggle{
     width: 30%;
     float: left;
     height: 300px;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    box-shadow: 0.5rem 0.5rem 0.5rem -0.5rem black;
 }
-
-/*mudanca*/
+.content .sidebar .redes-sociais{
+    text-align: center;
+    margin-left: 1em ;
+}
 .content .main-content .post{
     width: 95%;
     height: 270px;
     margin: 20px auto;
     border-radius: 5px;
-    background: #d5dddf;
+    background: whitesmoke;
     box-shadow: 0.5rem 0.5rem 0.5rem -0.5rem black;
     position: relative;
+    border-top: 1x solid black;
+
 
 }
 
@@ -315,12 +347,12 @@ header .menu-toggle{
     border: 1px solid black;
     background: transparent;
     border-radius: 0px;
-    color: black !important;
+    color: #aa1419 !important;
 }
 
 .content .main-content .post .saiba-mais:hover{
-    color: white !important;
-    background: rgb(22, 22, 22);
+    color: rgb(255, 255, 255) !important;
+    background: #aa1419;
     transition: 0.25s;
 }
 
@@ -337,7 +369,16 @@ header .menu-toggle{
 }
 
 .content .main-content .recent-posts-title{
-    margin: 20px;
+    margin: 10px auto;
+    text-align: center;
+    margin-left: 46%; 
 
 }
-
+/*formulario*/
+.form{
+    position: relative;
+    margin-left: 29em;
+    width: 35%;
+    border: 1px solid black;
+    text-align: justify;
+}
