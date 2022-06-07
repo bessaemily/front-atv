@@ -321,6 +321,7 @@ header .menu-toggle{
     height: 300px;
     border: 1px solid black;
     background-color: whitesmoke;
+    box-shadow: 0.5rem 0.5rem 0.5rem -0.5rem black;
 }
 .content .sidebar .redes-sociais{
     text-align: center;
@@ -335,6 +336,7 @@ header .menu-toggle{
     box-shadow: 0.5rem 0.5rem 0.5rem -0.5rem black;
     position: relative;
     border-top: 1x solid black;
+
 
 }
 
